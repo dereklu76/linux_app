@@ -1,12 +1,12 @@
-TARGETS := copy
+TARGETS := copy seek_io
 
 all : $(TARGETS)
 
-copy : copy.c
-	gcc copy.c -o copy
+% : %.c
+	gcc $< -o $@
 
 clean:
-	rm copy
+	rm $(TARGETS)
 
 .PHONY : all clean
 

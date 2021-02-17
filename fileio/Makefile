@@ -1,4 +1,4 @@
-TARGETS := copy seek_io
+TARGETS := copy seek_io bad_exclusive_open good_exclusive_open
 
 all : $(TARGETS)
 
